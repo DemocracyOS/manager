@@ -1,0 +1,47 @@
+{
+  "name": "manager",
+  "version": "0.0.1",
+  "description": "An deployment manager for DemocracyOS instances.",
+  "homepage": "http://www.democracyos.org/",
+  "keywords": [
+    "democracy",
+    "democracyos",
+    "liquid democracy",
+    "partido de la red",
+    "democracia en red",
+    "net democracy",
+    "net party",
+    "online democracy",
+    "web democracy",
+    "change the tool"
+  ],
+  "author": "Democracia en Red <speak@democracyos.org>",
+  "contributors": [
+    {
+      "name": "Guido Vilariño",
+      "email": "gvilarino@gmail.com"
+    },
+    {
+      "name": "Sacha Lifszyc",
+      "email": "sacha.lifszyc@gmail.com"
+    },
+    {
+      "name": "José María Fresco",
+      "email": "josemariafresco@gmail.com"
+    },
+    {
+      "name": "mariano Vicente",
+      "email": "m.vicent@gmail.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DemocracyOS/manager"
+  },
+  "dependencies": { },
+  "devDependencies": { },
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.4.x"
+  }
+}
