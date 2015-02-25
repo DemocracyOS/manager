@@ -16,29 +16,16 @@
     "change the tool"
   ],
   "author": "Democracia en Red <speak@democracyos.org>",
-  "contributors": [
-    {
-      "name": "Guido Vilariño",
-      "email": "gvilarino@gmail.com"
-    },
-    {
-      "name": "Sacha Lifszyc",
-      "email": "sacha.lifszyc@gmail.com"
-    },
-    {
-      "name": "José María Fresco",
-      "email": "josemariafresco@gmail.com"
-    },
-    {
-      "name": "mariano Vicente",
-      "email": "m.vicent@gmail.com"
-    }
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/DemocracyOS/manager"
   },
-  "dependencies": { },
+  "dependencies": {
+    "debug": "^2.1.1",
+    "express": "~3.20.0",
+    "merge-util": "0.3.1",
+    "node-path": "0.0.3"
+  },
   "devDependencies": { },
   "engines": {
     "node": "0.10.x",

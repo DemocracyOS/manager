@@ -1,2 +1,2 @@
 # manager
-Instance &amp; deployment manager
+Instance deployment manager
