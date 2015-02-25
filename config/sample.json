@@ -5,5 +5,6 @@
   },
   "locale" : "en",
   "port": 8989,
-  "protocol": ""
+  "protocol": "",
+  "api key": "some large api key"
 }
