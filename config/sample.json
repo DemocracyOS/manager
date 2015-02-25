@@ -4,6 +4,6 @@
     "connection": "mongodb://localhost/DemocracyOS-dev"
   },
   "locale" : "en",
-  "port": 3939,
+  "port": 8989,
   "protocol": ""
 }
