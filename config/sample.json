@@ -1,0 +1,9 @@
+{
+  "accestToken": "",
+  "db": {
+    "connection": "mongodb://localhost/DemocracyOS-dev"
+  },
+  "locale" : "en",
+  "port": 3939,
+  "protocol": ""
+}
