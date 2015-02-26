@@ -3,7 +3,34 @@
   "db": {
     "connection": "mongodb://localhost/DemocracyOS-dev"
   },
-  "locale" : "en",
+  "deis": {
+    "controller": "deis.democracyos.com",
+    "username": "user",
+    "password": "",
+    "image": "democracyos/app:0.10.13"
+  },
+  "deis instance env": {
+    "COMMENTS_PER_PAGE": 25,
+    "LEARN_MORE_URL": "http://democracyos.org",
+    "ORGANIZATION_URL": "http://democracyos.org",
+    "LOCALE": "en",
+    "MULTICORE": "false",
+    "NOTIFICATIONS_URL": "http://demo-notifier.herokuapp.com:80/api/events",
+    "FAVICON": "http://democracyos-demo.s3.amazonaws.com/logo.png",
+    "PORT": "80",
+    "PUBLIC_PORT": "80",
+    "NODE_ENV": "production",
+    "PROTOCOL": "http",
+    "SPAM_LIMIT": "5",
+    "RSS_ENABLED": "true",
+    "DEBUG": "democracyos*",
+    "LOGO": "http://democracyos-demo.s3.amazonaws.com/logo.png",
+    "NOTIFICATIONS_TOKEN": "d97b2dedacbb79173f8e431b3b6faf44",
+    "NODE_PATH": ".",
+    "STAFF": [],
+    "MONGO_URL": "mongodb://deis-test:thMlsIW_ylVdhVge7iKEvpTQKRfCYAukcq.AO9hWwRg-@ds060977.mongolab.com:60977/deis-test"
+  },
+  "locale": "en",
   "port": 8989,
   "protocol": ""
 }
