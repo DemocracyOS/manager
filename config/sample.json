@@ -1,10 +1,9 @@
 {
-  "accestToken": "",
+  "accessToken": "random token (http://randomkeygen.com)",
   "db": {
     "connection": "mongodb://localhost/DemocracyOS-dev"
   },
   "locale" : "en",
   "port": 8989,
-  "protocol": "",
-  "api key": "some large api key"
+  "protocol": ""
 }

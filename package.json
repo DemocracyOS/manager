@@ -24,9 +24,10 @@
     "debug": "^2.1.1",
     "express": "~3.20.0",
     "merge-util": "0.3.1",
+    "mongoose": "^3.8.23",
     "node-path": "0.0.3"
   },
-  "devDependencies": { },
+  "devDependencies": {},
   "engines": {
     "node": "0.10.x",
     "npm": "1.4.x"

@@ -5,7 +5,6 @@
 var app = module.exports = require('lib/boot');
 var http = require('http');
 var config = require('lib/config');
-var fs = require('fs');
 var log = require('debug')('democracyos:root');
 
 /**
