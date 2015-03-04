@@ -9,7 +9,12 @@
     "password": "",
     "image": "democracyos/app:0.10.13"
   },
-  "deis instance env": {
+  "instance db": {
+    "host": "examplemongohost:27018",
+    "user": "admin_user",
+    "password": "admin_pass"
+  },
+  "instance env": {
     "COMMENTS_PER_PAGE": 25,
     "LEARN_MORE_URL": "http://democracyos.org",
     "ORGANIZATION_URL": "http://democracyos.org",
@@ -25,10 +30,10 @@
     "RSS_ENABLED": "true",
     "DEBUG": "democracyos*",
     "LOGO": "http://democracyos-demo.s3.amazonaws.com/logo.png",
-    "NOTIFICATIONS_TOKEN": "d97b2dedacbb79173f8e431b3b6faf44",
+    "NOTIFICATIONS_TOKEN": "",
     "NODE_PATH": ".",
     "STAFF": [],
-    "MONGO_URL": "mongodb://deis-test:thMlsIW_ylVdhVge7iKEvpTQKRfCYAukcq.AO9hWwRg-@ds060977.mongolab.com:60977/deis-test"
+    "MONGO_URL": "mongodb://example"
   },
   "locale": "en",
   "port": 8989,
