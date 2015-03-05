@@ -12,7 +12,7 @@ endif
 
 run: packages
 	@echo "Starting application..."
-	@NODE_PATH=. DEBUG=$(DEBUG) node debug index.js
+	@NODE_PATH=. DEBUG=$(DEBUG) node index.js
 
 packages:
 	@echo "Installing dependencies..."
