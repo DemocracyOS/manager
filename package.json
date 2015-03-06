@@ -31,7 +31,8 @@
     "mongoose": "~3.8.24",
     "mongoose-unique-validator": "^0.4.1",
     "mout": "^0.11.0",
-    "node-path": "0.0.3"
+    "node-path": "0.0.3",
+    "superagent": "^0.21.0"
   },
   "devDependencies": {},
   "engines": {
