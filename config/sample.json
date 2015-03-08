@@ -10,10 +10,11 @@
     "image": "democracyos/app:0.10.13"
   },
   "instance db": {
-    "host": "mongodb://examplemongohost:27018",
-    "admin": {
-      "user": "admin_user",
-      "password": "admin_pass"
+    "connection": "mongodb://examplemongohost:27018",
+    "compose": {
+      "token": "longtokenofcomposeaccount",
+      "account": "account-name",
+      "deployment": "compose-deployment-name"
     }
   },
   "instance env": {
