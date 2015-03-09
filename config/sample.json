@@ -37,6 +37,14 @@
     "NODE_PATH": ".",
     "STAFF": []
   },
+  "reserved names": [
+    "deis",
+    "hub",
+    "manager",
+    "dashboard",
+    "admin",
+    "status"
+  ],
   "locale": "en",
   "port": 8989,
   "protocol": ""
