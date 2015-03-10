@@ -1,8 +1,6 @@
 {
   "accessToken": "random token (http://randomkeygen.com)",
-  "db": {
-    "connection": "mongodb://localhost/DemocracyOS-manager"
-  },
+  "mongoUrl": "mongodb://localhost/DemocracyOS-dev",
   "deis": {
     "controller": "deis.democracyos.com",
     "username": "user",
