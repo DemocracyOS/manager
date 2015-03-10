@@ -1,4 +1,4 @@
 build
 node_modules
-logs
 *.log
+.tmp/

@@ -1,0 +1,46 @@
+{
+  "name": "manager",
+  "version": "0.0.1",
+  "description": "An deployment manager for DemocracyOS instances.",
+  "homepage": "http://www.democracyos.org/",
+  "keywords": [
+    "democracy",
+    "democracyos",
+    "liquid democracy",
+    "partido de la red",
+    "democracia en red",
+    "net democracy",
+    "net party",
+    "online democracy",
+    "web democracy",
+    "change the tool"
+  ],
+  "author": "Democracia en Red <speak@democracyos.org>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DemocracyOS/manager"
+  },
+  "dependencies": {
+    "debug": "^2.1.1",
+    "deis-api": "git://github.com/aledbf/deis-api",
+    "express": "~3.20.0",
+    "git-wrapper": "^0.1.1",
+    "merge-util": "0.3.1",
+    "mjlescano-batch": "^0.5.3",
+    "mkdirp": "^0.5.0",
+    "mongodb": "^1.4.12",
+    "mongodb-uri": "^0.9.7",
+    "mongoose": "~3.8.24",
+    "mongoose-unique-validator": "^0.4.1",
+    "mout": "^0.11.0",
+    "node-path": "0.0.3",
+    "rimraf": "^2.3.1",
+    "superagent": "^0.21.0",
+    "urlencode": "^0.2.0"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": "0.12.x",
+    "npm": "2.5.x"
+  }
+}
