@@ -1,2 +1,2 @@
 # manager
-Instance deployment manager
+DemocracyOS deployments manager

@@ -4,10 +4,11 @@
   "deis": {
     "controller": "deis-controller-host",
     "username": "deis-user",
-    "password": "deis-password",
-    "image": "democracyos/app-deis-compatible-image"
+    "password": "deis-password"
   },
-  "instance db": {
+  "deployment image": "democracyos/app-deis-compatible-image",
+  "deployment internal registry": "internal-registry-domain:5000",
+  "deployment db": {
     "connection": "mongodb://examplemongohost:27018",
     "compose": {
       "token": "longtokenofcomposeaccount",
@@ -15,34 +16,39 @@
       "deployment": "compose-deployment-name"
     }
   },
-  "instance env": {
-    "COMMENTS_PER_PAGE": 25,
-    "LEARN_MORE_URL": "",
-    "ORGANIZATION_URL": "http://democracyos.org",
-    "LOCALE": "en",
-    "FAVICON": "http://democracyos-demo.s3.amazonaws.com/logo.png",
-    "PORT": "80",
-    "PUBLIC_PORT": "80",
-    "NODE_ENV": "production",
-    "PROTOCOL": "http",
-    "SPAM_LIMIT": "5",
-    "RSS_ENABLED": "true",
-    "DEBUG": "democracyos*",
-    "LOGO": "http://democracyos-demo.s3.amazonaws.com/logo.png",
-    "NOTIFICATIONS_TOKEN": "notifier-access-token",
-    "NOTIFICATIONS_URL": "http://notifier-host:80/api/events",
-    "NODE_PATH": ".",
-    "STAFF": [],
-    "JWT_SECRET": "deploymentJWTSecret"
+  "deployment env": {
+    "COMMENTS_PER_PAGE":    "25",
+    "LEARN_MORE_URL":       "",
+    "LOCALE":               "en",
+    "LOGO":                 "http://democracyos-demo.s3.amazonaws.com/logo.png",
+    "FAVICON":              "http://democracyos-demo.s3.amazonaws.com/favicon.ico",
+    "PORT":                 "80",
+    "PUBLIC_PORT":          "80",
+    "NODE_ENV":             "production",
+    "PROTOCOL":             "http",
+    "SPAM_LIMIT":           "5",
+    "RSS_ENABLED":          "false",
+    "NODE_PATH":            ".",
+    "DEBUG":                "democracyos*",
+    "NOTIFICATIONS_TOKEN":  "notifier-access-token",
+    "NOTIFICATIONS_URL":    "http://notifier-host:80/api/events",
+    "CORS_DOMAINS":         [],
+    "MONGO_USERS_URL":      "",
+    "EXTERNAL_SIGNIN_URL":  "",
+    "EXTERNAL_SIGNUP_URL":  "",
+    "JWT_SECRET":           "deploymentJWTSecret",
+    "CLIENT_CONF":          "",
+    "BASIC_USERNAME":       "",
+    "BASIC_PASSWORD":       "",
+    "FAQ":                  "",
+    "TERMS_OF_SERVICE":     "",
+    "PRIVACY_POLICY":       "",
+    "GLOSSARY":             "",
+    "HTTPS_PORT":           "443",
+    "HTTPS_REDIRECT_MODE":  "normal",
+    "GOOGLE_ANALYTICS_TRACKING_ID": ""
   },
-  "reserved names": [
-    "deis",
-    "hub",
-    "manager",
-    "dashboard",
-    "admin",
-    "status"
-  ],
+  "reserved names": "deis,hub,manager,dashboard,admin,status",
   "locale": "en",
   "port": 8989,
   "protocol": ""
