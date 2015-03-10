@@ -21,7 +21,7 @@
     "LEARN_MORE_URL":       "",
     "LOCALE":               "en",
     "LOGO":                 "http://democracyos-demo.s3.amazonaws.com/logo.png",
-    "FAVICON":              "http://democracyos-demo.s3.amazonaws.com/logo.png",
+    "FAVICON":              "http://democracyos-demo.s3.amazonaws.com/favicon.ico",
     "PORT":                 "80",
     "PUBLIC_PORT":          "80",
     "NODE_ENV":             "production",
