@@ -32,7 +32,7 @@
     "DEBUG":                "democracyos*",
     "NOTIFICATIONS_TOKEN":  "notifier-access-token",
     "NOTIFICATIONS_URL":    "http://notifier-host:80/api/events",
-    "CORS_DOMAINS":         [],
+    "CORS_DOMAINS":         "",
     "MONGO_USERS_URL":      "",
     "EXTERNAL_SIGNIN_URL":  "",
     "EXTERNAL_SIGNUP_URL":  "",
@@ -48,7 +48,14 @@
     "HTTPS_REDIRECT_MODE":  "normal",
     "GOOGLE_ANALYTICS_TRACKING_ID": ""
   },
-  "reserved names": "deis,hub,manager,dashboard,admin,status",
+  "reserved names": [
+    "deis",
+    "hub",
+    "manager",
+    "dashboard",
+    "admin",
+    "status"
+  ],
   "locale": "en",
   "port": 8989,
   "protocol": ""
