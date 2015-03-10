@@ -2,10 +2,10 @@
   "accessToken": "random token (http://randomkeygen.com)",
   "mongoUrl": "mongodb://localhost/DemocracyOS-dev",
   "deis": {
-    "controller": "deis.democracyos.com",
-    "username": "user",
-    "password": "",
-    "image": "democracyos/app:0.10.13"
+    "controller": "deis-controller-host",
+    "username": "deis-user",
+    "password": "deis-password",
+    "image": "democracyos/app-deis-compatible-image"
   },
   "instance db": {
     "connection": "mongodb://examplemongohost:27018",
@@ -17,10 +17,9 @@
   },
   "instance env": {
     "COMMENTS_PER_PAGE": 25,
-    "LEARN_MORE_URL": "http://democracyos.org",
+    "LEARN_MORE_URL": "",
     "ORGANIZATION_URL": "http://democracyos.org",
     "LOCALE": "en",
-    "MULTICORE": "false",
     "FAVICON": "http://democracyos-demo.s3.amazonaws.com/logo.png",
     "PORT": "80",
     "PUBLIC_PORT": "80",
@@ -30,11 +29,11 @@
     "RSS_ENABLED": "true",
     "DEBUG": "democracyos*",
     "LOGO": "http://democracyos-demo.s3.amazonaws.com/logo.png",
-    "NOTIFICATIONS_TOKEN": "",
-    "NOTIFICATIONS_URL": "http://demo-notifier.herokuapp.com:80/api/events",
+    "NOTIFICATIONS_TOKEN": "notifier-access-token",
+    "NOTIFICATIONS_URL": "http://notifier-host:80/api/events",
     "NODE_PATH": ".",
     "STAFF": [],
-    "JWT_SECRET": "123123"
+    "JWT_SECRET": "deploymentJWTSecret"
   },
   "reserved names": [
     "deis",
