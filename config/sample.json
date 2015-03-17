@@ -41,7 +41,7 @@
     "HTTPS_REDIRECT_MODE":  "normal",
     "GOOGLE_ANALYTICS_TRACKING_ID": ""
   },
-  "reserved names": [
+  "deploymentReservedNames": [
     "deis",
     "hub",
     "manager",
