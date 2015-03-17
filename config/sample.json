@@ -8,14 +8,7 @@
   },
   "deployment image": "democracyos/app-deis-compatible-image",
   "deployment internal registry": "internal-registry-domain:5000",
-  "deployment db": {
-    "connection": "mongodb://examplemongohost:27018",
-    "compose": {
-      "token": "longtokenofcomposeaccount",
-      "account": "account-name",
-      "deployment": "compose-deployment-name"
-    }
-  },
+  "deployment db server": "mongodb://admin-user:admin-user-password@examplemongohost:27018",
   "deployment env": {
     "COMMENTS_PER_PAGE":    "25",
     "LEARN_MORE_URL":       "",
