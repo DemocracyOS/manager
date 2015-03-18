@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "debug": "2.1.1",
-    "deis-api": "git://github.com/aledbf/deis-api#v0.0.14",
+    "deis-api": "git://github.com/DemocracyOS/deis-api",
     "democracyos-db": "0.0.1",
     "express": "3.20.0",
     "git-wrapper": "0.1.1",
