@@ -4,7 +4,8 @@
   "deis": {
     "controller": "deis-controller-host",
     "username": "deis-user",
-    "password": "deis-password"
+    "password": "deis-password",
+    "secure": false
   },
   "deploymentImage": "democracyos/app-deis-compatible-image",
   "deploymentInternalRegistry": "internal-registry-ip:5000",
