@@ -6,10 +6,10 @@
     "username": "deis-user",
     "password": "deis-password"
   },
-  "deployment image": "democracyos/app-deis-compatible-image",
-  "deployment internal registry": "internal-registry-domain:5000",
-  "deployment db server": "mongodb://admin-user:admin-user-password@examplemongohost:27018",
-  "deployment env": {
+  "deploymentImage": "democracyos/app-deis-compatible-image",
+  "deploymentInternalRegistry": "internal-registry-ip:5000",
+  "deploymentMongoUrl": "mongodb://admin-user:admin-user-password@examplemongohost:27018",
+  "deploymentEnv": {
     "COMMENTS_PER_PAGE":    "25",
     "LEARN_MORE_URL":       "",
     "LOCALE":               "en",
@@ -41,7 +41,7 @@
     "HTTPS_REDIRECT_MODE":  "normal",
     "GOOGLE_ANALYTICS_TRACKING_ID": ""
   },
-  "reserved names": [
+  "deploymentReservedNames": [
     "deis",
     "hub",
     "manager",
