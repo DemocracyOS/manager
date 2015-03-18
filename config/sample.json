@@ -1,6 +1,7 @@
 {
   "accessToken": "random token (http://randomkeygen.com)",
   "mongoUrl": "mongodb://localhost/DemocracyOS-dev",
+  "port": 8989,
   "deis": {
     "controller": "deis-controller-host",
     "username": "deis-user",
@@ -9,6 +10,16 @@
   },
   "deploymentImage": "democracyos/app-deis-compatible-image",
   "deploymentInternalRegistry": "internal-registry-ip:5000",
+  "deploymentReservedNames": [
+    "deis",
+    "hub",
+    "manager",
+    "dashboard",
+    "admin",
+    "status",
+    "notifier"
+  ],
+  "deploymentLinksProtocol": "http",
   "deploymentMongoUrl": "mongodb://admin-user:admin-user-password@examplemongohost:27018",
   "deploymentEnv": {
     "COMMENTS_PER_PAGE":    "25",
@@ -42,16 +53,5 @@
     "HTTPS_PORT":           "443",
     "HTTPS_REDIRECT_MODE":  "normal",
     "GOOGLE_ANALYTICS_TRACKING_ID": ""
-  },
-  "deploymentReservedNames": [
-    "deis",
-    "hub",
-    "manager",
-    "dashboard",
-    "admin",
-    "status"
-  ],
-  "locale": "en",
-  "port": 8989,
-  "protocol": ""
+  }
 }
