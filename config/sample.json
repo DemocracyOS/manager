@@ -30,6 +30,7 @@
     "MONGO_USERS_URL":      "",
     "EXTERNAL_SIGNIN_URL":  "",
     "EXTERNAL_SIGNUP_URL":  "",
+    "EXTERNAL_SETTINGS_URL":  "",
     "JWT_SECRET":           "deploymentJWTSecret",
     "CLIENT_CONF":          "",
     "BASIC_USERNAME":       "",
