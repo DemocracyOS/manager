@@ -3,7 +3,7 @@
 #
 
 ifndef DEBUG
-	DEBUG="democracyos*"
+	DEBUG="manager*"
 endif
 
 ifndef NODE_ENV
