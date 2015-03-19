@@ -32,6 +32,7 @@
     "mongodb": "1.4.12",
     "mongodb-uri": "0.9.7",
     "mongoose": "3.8.24",
+    "mongoose-soft-delete": "inlight-media/node-mongoose-soft-delete#1dee288aeaa9e96ee27ab679e42b8eb3a3c73a06",
     "mongoose-unique-validator": "0.4.1",
     "mout": "0.11.0",
     "node-path": "0.0.3",

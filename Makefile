@@ -23,5 +23,8 @@ clean:
 	@rm -rf node_modules
 	@echo "Done.\n"
 
+debug: packages
+	@echo "Starting application..."
+	@NODE_PATH=. DEBUG=$(DEBUG) node debug index.js
 
 .PHONY: clean
