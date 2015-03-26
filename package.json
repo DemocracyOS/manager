@@ -41,7 +41,11 @@
     "url-join": "0.0.1",
     "urlencode": "0.2.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "chai": "^2.1.2",
+    "mocha": "^2.2.1",
+    "mockgoose": "^1.10.7"
+  },
   "engines": {
     "node": "0.10.x",
     "npm": "2.5.x"

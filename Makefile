@@ -23,5 +23,7 @@ clean:
 	@rm -rf node_modules
 	@echo "Done.\n"
 
+test:
+	@NODE_PATH=. DEBUG=$(DEBUG) ./node_modules/mocha/bin/mocha
 
-.PHONY: clean
+.PHONY: clean test
