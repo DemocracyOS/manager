@@ -4,12 +4,3 @@
  */
 
 require('node-path')(module);
-
-/**
- * Mock mongodb
- */
-
-var mongoose = require('mongoose');
-var mockgoose = require('mockgoose');
-
-mockgoose(mongoose);

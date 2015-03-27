@@ -24,6 +24,6 @@ clean:
 	@echo "Done.\n"
 
 test:
-	@NODE_PATH=. DEBUG=$(DEBUG) ./node_modules/mocha/bin/mocha
+	@NODE_ENV="test" NODE_PATH=. DEBUG=$(DEBUG) ./node_modules/mocha/bin/mocha
 
 .PHONY: clean test

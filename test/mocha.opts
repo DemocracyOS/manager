@@ -1,5 +1,4 @@
 --require test/support/init
---reporter spec
---ui bdd
 --reporter list
+--ui bdd
 --check-leaks
