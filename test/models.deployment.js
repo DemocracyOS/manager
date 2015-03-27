@@ -1,3 +1,4 @@
+var expect = require('chai').expect;
 var clearDb = require('./support/clear-db');
 var User = require('lib/models').User;
 var Deployment = require('lib/models').Deployment;
@@ -36,6 +37,33 @@ describe('Deployment', function(){
       if (err && err.name === 'ValidationError') return done(null);
       if (err) return done(err);
       done(new Error('Model with duplicated name saved.'));
+    });
+  });
+
+  describe('.nameIsValid()', function(){
+    [
+      'name',
+      'name-with-slash',
+      'a',
+      'abc'
+    ].forEach(function(name){
+      it('"'+name+'" should be valid', function(){
+        var isValid = Deployment.nameIsValid(name);
+        expect(isValid).to.be.true;
+      });
+    });
+
+    [
+      '-asd',
+      'asd-',
+      'coneñe',
+      'name!',
+      'asdqwertvxasdqwertvxasdqwertvxasdqwertvxasdqwertvxasdqwertvxasdqwertvxasdqwertvxq',
+    ].forEach(function(name){
+      it('"'+name+'" should be invalid', function(){
+        var isValid = Deployment.nameIsValid(name);
+        expect(isValid).to.be.false;
+      });
     });
   });
 
