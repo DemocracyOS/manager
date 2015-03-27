@@ -1,33 +1,16 @@
 var expect = require('chai').expect;
 var clearDb = require('./support/clear-db');
-var User = require('lib/models').User;
+var faker = require('./support/faker');
 var Deployment = require('lib/models').Deployment;
 
 describe('Deployment', function(){
-  before(function(done){
-    this.user = new User({
-      email: 'afake-name@fakedomain.com.foo'
-    });
-
-    this.user.save(done);
-  });
-
-  before(function(done){
-    this.deployment = new Deployment({
-      name: 'test-democracy',
-      title: 'Test Democracy',
-      owner: this.user._id,
-      status: 'creating'
-    });
-
-    this.deployment.save(done);
-  });
+  before(faker.deployment.attach);
 
   after(clearDb);
 
   it('should not be created with duplicated name', function(done){
     var deployment = new Deployment({
-      name: 'test-democracy',
+      name: this.deployment.name,
       title: 'Test Democracy',
       owner: this.user,
       status: 'creating'
