@@ -44,7 +44,8 @@
   "devDependencies": {
     "chai": "^2.1.2",
     "mocha": "^2.2.1",
-    "mocha-mongoose": "^1.0.4"
+    "mocha-mongoose": "^1.0.4",
+    "mockery": "^1.4.0"
   },
   "engines": {
     "node": "0.10.x",
