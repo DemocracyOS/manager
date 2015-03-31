@@ -3,11 +3,14 @@ var mockery = require('mockery');
 var mocked = 0;
 
 module.exports = {
-  enable: function(name){
+  enable: function(name, mock){
+    if (!name) return;
+    if (!mock) mock = './' + name;
     return function(){
-      if (!name) return;
-      if (++mocked === 1) mockery.enable({ warnOnUnregistered: false });
-      mockery.registerMock(name, require('./'+name));
+      if (++mocked === 1) {
+        mockery.enable({ warnOnUnregistered: false, useCleanCache: true });
+      }
+      mockery.registerMock(name, require(mock));
     }
   },
 

@@ -5,7 +5,7 @@ exports.create = function (name, fn) {
     owner: 'test',
     structure: {},
     updated: '2014-01-01T00:00:00UTC',
-    url: name+'.democracyos.com',
+    url: name+'.democracyos.dev',
     uuid: 'de1bf5b5-4a72-4f94-a10c-d2a3741cdf75'
   };
 

@@ -1,27 +1,12 @@
 var expect = require('chai').expect;
 var clearDb = require('./support/clear-db');
-var faker = require('./support/faker');
+var Faker = require('test/support/faker');
 var Deployment = require('lib/models').Deployment;
 
-describe('Deployment', function(){
-  before(faker.deployment.attach);
+var faker = new Faker('models-deployment');
 
+describe('Models Deployment', function(){
   after(clearDb);
-
-  it('should not be created with duplicated name', function(done){
-    var deployment = new Deployment({
-      name: this.deployment.name,
-      title: 'Test Democracy',
-      owner: this.user,
-      status: 'creating'
-    });
-
-    deployment.save(function(err){
-      if (err && err.name === 'ValidationError') return done(null);
-      if (err) return done(err);
-      done(new Error('Model with duplicated name saved.'));
-    });
-  });
 
   describe('.nameIsValid()', function(){
     [
@@ -51,16 +36,24 @@ describe('Deployment', function(){
   });
 
   describe('#setStatus()', function(){
+    before(faker.create('user', 'setStatus'));
+
+    before(function(done){
+      var user = faker.get('user', 'setStatus');
+      faker.create('deployment', 'setStatus', {
+        owner: user
+      })(done);
+    });
+
     it('should change status from "creating" to "ready"', function(done){
       var self = this;
+      var deployment = faker.get('deployment', 'setStatus');
 
-      this.deployment.setStatus('ready', function(err){
+      deployment.setStatus('ready', function(err){
         if (err) throw err;
-
-        if (self.deployment.status !== 'ready') {
+        if (deployment.status !== 'ready') {
           return done(new Error('Deployment status didnt change.'));
         }
-
         done(null);
       });
     });
