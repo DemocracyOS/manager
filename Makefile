@@ -23,7 +23,9 @@ clean:
 	@rm -rf node_modules
 	@echo "Done.\n"
 
-test:
+test: packages run-test
+
+run-test:
 	@NODE_ENV="test" NODE_PATH=. DEBUG=$(DEBUG) ./node_modules/mocha/bin/mocha
 
 .PHONY: clean test
