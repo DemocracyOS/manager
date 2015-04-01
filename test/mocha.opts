@@ -1,0 +1,4 @@
+--require test/support/init
+--reporter list
+--ui bdd
+--check-leaks

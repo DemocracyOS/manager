@@ -29,7 +29,7 @@
     "merge-util": "0.3.1",
     "mjlescano-batch": "0.5.3",
     "mkdirp": "0.5.0",
-    "mongodb": "1.4.12",
+    "mongodb": "1.4.35",
     "mongodb-uri": "0.9.7",
     "mongoose": "3.8.24",
     "mongoose-unique-validator": "0.4.1",
@@ -41,7 +41,12 @@
     "url-join": "0.0.1",
     "urlencode": "0.2.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "chai": "^2.1.2",
+    "mocha": "^2.2.1",
+    "mocha-mongoose": "^1.0.4",
+    "mockery": "^1.4.0"
+  },
   "engines": {
     "node": "0.10.x",
     "npm": "2.5.x"
